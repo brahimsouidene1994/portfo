@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1> <i class="fas fa-male"></i>portfolio</h1>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="navbar-container" >
+            <li class="nav-link">
+                <a href="#home">home</a>               
+            </li>
+            <li class="nav-link">works</li>
+            <!-- <li class="nav-link">experiences</li>
+            <li class="nav-link">competences</li> -->
+            <li class="nav-link" >
+                <a href="#footer-part">contact-me</a>               
+            </li>
+        </ul>
+    </div>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text-hide">Welcome to</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text-hide">the portfolio of</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text-hide">brahim ben souidene</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider-intro"></div>
+    <video src="./videos/video-3.mp4" loop muted autoplay></video>
+    <div class="home-container">
+        <div class="profil-img">
+            <img src="./images/29366100_10216039726852842_2558937494867410944_n.jpg" alt="profil-img">
+        </div>
+        <div class="about-me">
+                <section class="my-infos">
+                    <h4>personal info:</h4>
+                    <div class="personal-informations-content">
+                        <div class="labels">
+                            <p>name:</p>
+                            <p>lastname:</p>
+                            <p>birth date:</p>
+                            <p>age:</p>
+                            <p>nationality:</p>
+                        </div>
+                        <div class="labels-contents">
+                            <p>brahim</p>
+                            <p>souidene</p>
+                            <p>17 may 1994</p>
+                            <p>27 years old</p>
+                            <p>tunisian</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="description">
+                    <h4>My goal:</h4>
+                    <p>To be a great project manager with a lot of successful projects and a leadership skills so
+                        i can make people take me as an exemple </p>
+                </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" 
+            integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="./script.js"></script>
+    <div class="second-container" id="experience-part">
+        <div class="experieces">
+
+        </div>
+    </div>
+    <footer id="footer-part">
+        <div class="footer-heading">
+            <h3>
+                follow or contact me for more information
+            </h3>
+        </div>
+        <div class='footer-container'>
+            <section class='footer-subscription'>
+    
+                <p class='footer-subscription-text'>
+                    Subscribe now
+                </p>
+                <div class='input-areas'>
+                    <form>
+                        <input class='footer-input' name='email' type='email' placeholder='Your Email' /><br />
+                        <p class="btn-Subs">Subscribe</p>
+                    </form>
+                </div>
+            </section>
+            <section class='footer-links'>              
+                    <p>Social Media</p>
+                    <div class='footer-link-items'>
+                        <div class="social-link">
+                            <a class='fab fa-instagram' href='https://www.instagram.com/barhoum1994/' target="_blank"
+                                rel="noopener noreferrer"> Instagram</a><br/>
+                            <a class='fab fa-facebook-f' href='https://www.facebook.com/babou.souiden.5' target="_blank"
+                                rel="noopener noreferrer"> Facebook </a>
+                        </div>
+                        <div class="social-link">
+                            <a class='fab fa-youtube' href='/'> Youtube</a><br/>
+                            <a class='fab fa-twitter' href='https://twitter.com/BSouidene' target="_blank"
+                                rel="noopener noreferrer"> Twitter</a>
+                        </div>
+                        <div class="social-link">
+                            <a class='fab fa-linkedin' href='https://www.linkedin.com/in/brahim-souidene-63526a205/'
+                                target="_blank" rel="noopener noreferrer"> LinkedIn</a><br/>
+                            <a class='fab fa-github' href='https://github.com/brahimsouidene1994' target="_blank"
+                                rel="noopener noreferrer"> GitHub</a>
+                        </div>
+                    </div>
+            </section>   
+        </div>
+        <div class="footer-bottom">
+            <div class="copy-right">
+                <h4 class="copy-right-text">
+                    <i class="fas fa-file-signature"></i> this web page created by
+                    <span>
+                        Brahim Souidene
+                    </span>
+                </h4>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
