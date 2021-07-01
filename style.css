@@ -339,8 +339,8 @@ footer{
     align-items: center;
 }
 .profil-img{    
-    width: 60%;
-    height: 70%;
+    width: 90vw;
+    height: 90vh;
     padding: .5em;
     transform: translateX(200%);
 }
