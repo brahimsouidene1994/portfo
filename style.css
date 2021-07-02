@@ -339,8 +339,8 @@ footer{
     align-items: center;
 }
 .profil-img{    
-    width: 90vw;
-    height: 90vh;
+    width: 60%;
+    height: auto;
     padding: .5em;
     transform: translateX(200%);
 }
@@ -350,7 +350,8 @@ footer{
 }
 .about-me{
     width: 90%;
-    height: 30%;
+    height: auto;
+    margin-top: -0.5em;
     background: var(--clr-bg);
     display: flex;
     align-items: flex-start;
@@ -365,11 +366,9 @@ footer{
     border: none;
     width: 100%;
     margin-top:1em;
+    margin-left: 2em;
     position: relative;
     font-weight: bold;
-}
-.description{
-    margin-left: 2em;
 }
 
 .description > h4,
@@ -402,5 +401,17 @@ footer{
     padding: 1.5em 1em;
     color: aliceblue;
 }
-
+@media screen and ( max-width: 960px ){
+    .about-me{
+        flex-direction: column;
+    }
+    .my-infos,
+    .description {   
+    margin: 2em 1em 1em 0;
+    }
+    .personal-informations-content{
+        border: none;
+        border-bottom : 3px solid #000;
+    }
+}
 /** home container */
