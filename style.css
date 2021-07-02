@@ -165,6 +165,8 @@ video{
     }
     .nav-link{
         opacity: 0;
+        width: 100%;
+        height: 50%;
     }
 
     .nav-link:nth-child(1){
@@ -177,7 +179,8 @@ video{
         transition: all 0.5 ease 0.6;
     }
     li.fade{
-        opacity: 1;
+        opacity: 1; 
+        
     }
 }
 /* resposive navbar */
@@ -340,12 +343,29 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .profil-img{    
     width: 60%;
     height: auto;
     padding: .5em;
     transform: translateX(200%);
+}
+.profil-img.open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : rgb(0,0,0,0.5);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    z-index: 3;
+}
+.profil-img > img.open{
+    width: 100%;
+    height: auto;
 }
 .profil-img > img{
     width: 100%;

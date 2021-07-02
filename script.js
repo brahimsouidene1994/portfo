@@ -13,21 +13,28 @@ tl.to('.profil-img',{x:'0%', duration:1.5});
 const hamburger = document.querySelector(".hamburger");
 const nav_links = document.querySelector(".navbar-container");
 const links = document.querySelectorAll(".navbar-container li");
+const img_container = document.querySelector(".profil-img");
+const img = document.querySelector(".profil-img > img");
+
 
 hamburger.addEventListener('click',()=>{
-    nav_links.classList.toggle('open');
-    links.forEach(link => {
-        link.classList.toggle('fade');
-        link.addEventListener('click',()=>{
-            if(nav_links.classList.toggle("open")){
-                nav_links.classList.toggle("open")
-                links.forEach(item=>{
-                    if(item.classList.toggle("fade")){
-                        item.classList.toggle("fade")
-                    }
-                })
-            }
-        });
-        });
+    nav_links.classList.toggle('open');   
 });
+links.forEach(link => {
+    link.classList.toggle('fade');
+    link.addEventListener('click',()=>{
+        if(nav_links.classList.toggle("open")){
+            nav_links.classList.toggle("open")
+            links.forEach(item=>{
+                if(item.classList.toggle("fade")){
+                    item.classList.toggle("fade")
+                }
+            })
+        }
+    });
+});
+img_container.addEventListener('click',()=>{
+    img_container.classList.toggle('open');
+    img.classList.toggle('open');
+})
 /** menu navbar mobile*/
