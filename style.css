@@ -73,7 +73,7 @@ video{
     display: flex;
     align-items: center;
 }
-.navbar > h1{
+.navbar > a > h1{
     font-family: 'Yellowtail', cursive;
     text-transform: capitalize;
     margin-left: 2rem;
@@ -99,13 +99,16 @@ video{
     justify-content: center;
     font-weight: bold;
 }
-.nav-link > a{
+.nav-link > a,
+.navbar > a{
     text-decoration: none;
 }
-.nav-link> a:visited{
+.nav-link> a:visited,
+.navbar > a{
     color: inherit;
 }
-.nav-link> a:link{
+.nav-link> a:link,
+.navbar > a{
     color: inherit;
 }
 .nav-link:hover{
