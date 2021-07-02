@@ -364,7 +364,7 @@ footer{
     z-index: 3;
 }
 .profil-img > img.open{
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 .profil-img > img{
