@@ -1,4 +1,17 @@
 
+/**active link item */
+// Add active class to the current button (highlight it)
+var header = document.getElementById("my-navlinks");
+var btns = header.getElementsByClassName("nav-link");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+/**active link item */
+
 /**intro animation */
 const tl = gsap.timeline({defaults:{ease:"power1.out"}});
 
@@ -56,12 +69,23 @@ var scene1 = new ScrollMagic.Scene({
 .setClassToggle('.profil-img','show')
 .addTo(controller);
 
-var scene2 = new ScrollMagic.Scene({
-    triggerElement : '.historique-container'
+/**academy animation */
+var sceneAcademy1 = new ScrollMagic.Scene({
+    triggerElement : '.historique-container .historique-body'
 })
-.setClassToggle('.historique-body','show')
+.setClassToggle('.first-study','show')
 .addTo(controller);
-
+var sceneAcademy2 = new ScrollMagic.Scene({
+    triggerElement : '.historique-container .historique-body'
+})
+.setClassToggle('.second-study','show')
+.addTo(controller);
+var sceneAcademy3 = new ScrollMagic.Scene({
+    triggerElement : '.historique-container .historique-body'
+})
+.setClassToggle('.third-study','show')
+.addTo(controller);
+/**academy animation */
 
 /**image profil */
 
