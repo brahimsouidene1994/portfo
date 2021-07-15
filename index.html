@@ -14,11 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <a href="#">
             <h1> <i class="fas fa-male"></i>portfolio</h1>
         </a>
@@ -32,9 +33,6 @@
                 <a href="#">home</a>
             </li>
             <li class="nav-link">
-                <a href="#about-me">about me</a>
-            </li>
-            <li class="nav-link">
                 <a href="#historique">Academy</a>
             </li>
             <li class="nav-link">
@@ -44,7 +42,9 @@
                 <a href="#works">works</a>
             </li>
             <li class="nav-link">
-                <a href="#footer-part">contact-me</a>
+                <a 
+                id="btn-footer"
+                >contact-me</a>
             </li>
         </ul>
     </div>
@@ -62,55 +62,21 @@
         </div>
     </div>
     <div class="slider-intro"></div>
-    <video src="./videos/video-3.mp4" loop muted autoplay></video>
+    <!-- <video src="./videos/video-3.mp4" loop muted autoplay></video> -->
     <div class="starting-container" id="home">
-        <div class="starting-header">
-            <h2>welcome aboard my dear friends</h2>
-        </div>
+       <img src="./images/fix_img.jpg" alt="avatar">
+       <div class="front-color"></div>
         <div class="starting-text">
-            <p>
-                here you can find everything you guys want to know about me
+            <h1>hi, i'm
+                <span>Brahim Souidene</span> 
+            </h1>
+            <p>web/mobile front developer
+                <br/><span>open to work</span>
             </p>
-            <p>
-                such as who i am , what i do for living , my latest works , etc...
-            </p>
-            <p>
-                so welcome aboard and let's get started by scrolling down yey!
-            </p>
+            <button class="btn-Subs" onclick="goToContact()">Hire me </button>
         </div>
     </div>
-    <div class="aboutme-container" id="about-me">
-        <div class="profil-img">
-            <img src="./images/29366100_10216039726852842_2558937494867410944_n.jpg" alt="profil-img">
-        </div>
-        <div class="about-me">
-            <section class="my-infos">
-                <h4>personal info:</h4>
-                <div class="personal-informations-content">
-                    <div class="labels">
-                        <p>name:</p>
-                        <p>lastname:</p>
-                        <p>birth date:</p>
-                        <p>age:</p>
-                        <p>nationality:</p>
-                    </div>
-                    <div class="labels-contents">
-                        <p>brahim</p>
-                        <p>souidene</p>
-                        <p>17 may 1994</p>
-                        <p>27 years old</p>
-                        <p>tunisian</p>
-                    </div>
-                </div>
-            </section>
-            <section class="description">
-                <h4>My goal:</h4>
-                <p>To be a great project manager with a lot of successful projects and a leadership skills so
-                    i can make people take me as an exemple </p>
-            </section>
-        </div>
-    </div>
-
+  
     <div class="historique-container" id="historique">
         <div class="historique-title">
             <h3>academic history</h3>
