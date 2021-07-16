@@ -33,13 +33,15 @@
                 <a href="#">home</a>
             </li>
             <li class="nav-link">
-                <a href="#historique">Academy</a>
+                <a id="btn-education">education</a>
             </li>
             <li class="nav-link">
-                <a href="#skills">Skills</a>
+                <a id="btn-services">
+                    services</a>
             </li>
             <li class="nav-link">
-                <a href="#works">works</a>
+                <a 
+                id="btn-works">works</a>
             </li>
             <li class="nav-link">
                 <a 
@@ -64,7 +66,7 @@
     <div class="slider-intro"></div>
     <!-- <video src="./videos/video-3.mp4" loop muted autoplay></video> -->
     <div class="starting-container" id="home">
-       <img src="./images/fix_img.jpg" alt="avatar">
+       <img src="./images/29366100_10216039726852842_2558937494867410944_n.jpg" alt="avatar">
        <div class="front-color"></div>
         <div class="starting-text">
             <h1>hi, i'm
@@ -77,174 +79,121 @@
         </div>
     </div>
   
-    <div class="historique-container" id="historique">
+    <div class="historique-container" id="education">
         <div class="historique-title">
-            <h3>academic history</h3>
+            <h1>education</h1>
         </div>
         <div class="historique-body">
             <div class="first-study">
-                <h4>Bachelor in Computer Science</h4>
                 <div class="details">
                     <ul>school Soliman, Tunisia
                         <li>Graduated with distinct honors</li>
-                        <li>Year of graduation: 2015</li>
+                        <li>bachelor 2015</li>
                     </ul>
                 </div>
+                <h4>Bachelor in Computer Science</h4>
             </div>
             <div class="second-study">
-                <h4>National Certificate of Applied License in Information Systems Development</h4>
                 <div class="details">
                     <ul>ISET RADES, Rades, Ben Arouss
                         <li>Graduated with distinct honors 2019</li>
-                        <ol>Projects
-                            <li>Creating App Web/Mobile for the management of the company driving school.</li>
-
-                        </ol>
                     </ul>
                 </div>
+                <h4>National Certificate of Applied License in Information Systems Development</h4>
             </div>
             <div class="third-study">
-                <h4>first year master's degree in development mobile</h4>
                 <div class="details">
                     <ul>ISET RADES, Rades, Ben Arouss
-                        <li>Graduated with distinct honors</li>
-                        <ol>Projects
-                            <li>App mobile "GoTaxi" for the reservation of a Taxi.
-                                Technologies : Android with Firebase</li>
-                            <li>App Web "Stage et PFE" dedicated for ISET's students, it helps them to find the perfect
-                                project
-                                using the matching system also to keep tracking the progress of that project period.
-                            </li>
-                        </ol>
+                        <li>Graduated with distinct honors 2022</li>  
                     </ul>
-                </div>
+                    </div>
+                    <h4>master's degree in development mobile</h4>
             </div>
         </div>
     </div>
 
-    <div class="skills-container" id="skills">
-        <div class="skills-title">
-            <h2>Skills</h2>
+    <div class="services-container" id="services">
+        <div class="services-heading">
+            <h1>services</h1>
         </div>
-        <div class="skills-body">
-            <div class="content-img">
-                <div class="img-text">
-                    <p>hover here</p>
+        <div class="container">
+            <div class="container-content">
+                <div class="tabs">
+                    <ul>
+                        <li class="tablinks" onclick="openSkills(event, 'programming')">languagess</li>
+                        <li class="tablinks" onclick="openSkills(event, 'tools')">tools</li>
+                        <li class="tablinks" onclick="openSkills(event, 'soft')">soft skills</li>
+                    </ul>
                 </div>
-                <div class="img-before">
-                    <img class="before" src="./images/2.jpg" alt="img-profil">
-
-                </div>
-                <div class="img-after">
-                    <img class="after" src="./images/1.jpg" alt="img-profil">
-                </div>
-                <div class="slider"></div>
-            </div>
-            <div class="content-info">
-                <div class="content-skills">
-                    <p class="p-animation">
-                        <i class="fas fa-code"></i>
-                        html / css / javascript
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-react"></i>
-                        reactjs
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-angular"></i>
-                        angularjs
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-android"></i>
-                        android
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-node"></i>
-                        nodejs
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-java"></i>
-                        java
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-symfony"></i>
-                        symfony 3.4
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fas fa-database"></i>
-                        sql / noSql languages
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                    </p>
-                </div>
-            </div>
-            <div class="content-method">
-                <div class="content-skills">
-                    <p class="p-animation">
-                        <i class="fas fa-code"></i>
-                        SCRUM worker
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-github"></i>
-                        github
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
-                    <p class="p-animation">
-                        <i class="fab fa-jira"></i>
-                        jira
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </p>
+                <div class="skills">
+                    <div id="programming" class="tabs-content">
+                        <ul>
+                            <li>
+                                <img src="./images/ionic.png" alt="">
+                                <p>ionic</p>
+                            </li>
+                            <li>
+                                <img src="./images/Angular_full_color_logo.svg.png" alt="">
+                                <p>angular</p>
+                            </li>
+                            <li>
+                                <img src="./images/reactjs.png" alt="">
+                                <p>reactjs</p>
+                            </li>
+                            <li>
+                                <img src="./images/Android-Logo.png" alt="">
+                                <p>android</p>
+                            </li>
+                            <li>
+                                <img src="./images/519-5191896_pofolio-website-html-css-javascript-logo-png-transparent.png" alt="">
+                                <p>html/js/css</p>
+                            </li>
+                            <li>
+                                <img src="./images/symfony-logo-png-transparent.png" alt="">
+                                <p>symfony 3.4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tools" class="tabs-content">
+                        <ul>
+                            <li>
+                                <img src="./images/bootstrap.png" alt="">
+                                <p>bootstrap</p>
+                            </li>
+                            <li>
+                                <img src="./images/xstyled-logo.jpg" alt="">
+                                <p>styled compo</p>
+                            </li>
+                            <li>
+                                <img src="./images/adobe-xd-HzedyS.png" alt="">
+                                <p>adobe xd</p>
+                            </li>
+                            <li>
+                                <img src="./images/adobe-photoshop-logo.png" alt="">
+                                <p>photo shop</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="soft" class="tabs-content">
+                        <ul>
+                            <li>
+                                <img src="./images/sd-integrations-logo-jira.png" alt="">
+                                <p>jira</p>
+                            </li>
+                            <li>
+                                <img src="./images/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg" alt="">
+                                <p>agile method</p>
+                            </li>
+                            <li>
+                                <img src="./images/daily-scrum-1409251-1192344.png" alt="">
+                                <p>daily meeting</p>
+                            </li>
+                            <li>
+                                <img src="./images/confluence icon.png" alt="">
+                                <p>confluence</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
